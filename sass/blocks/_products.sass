@@ -1,0 +1,53 @@
+.products
+   margin: 70px 0
+   p
+      font-size: 14px
+      line-height: 20px
+      font-weight: 600
+      letter-spacing: 5.6px
+      color: $banner-text
+      margin: 15px 0
+      text-align: center
+   .products__title
+      font-size: 26px
+      line-height: 30px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 2.6px
+      color: $gray
+   &__block
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      margin: 40px 0
+   &__element
+      flex-basis: 31%
+      position: relative
+      img
+         max-width: 100%
+         display: block
+         margin: 0 auto
+      a
+         position: absolute
+         left: 50%
+         transform: translateX(-50%)
+         bottom: 20px
+         $values: (fs: 13px, lh: 20px, ls: 0.78px, br: 60px, w:175px)
+         @include btn($values...)
+         padding: 20px 0
+
+@media (max-width: 768px)
+   .products
+      margin: 25px 0
+      &__block
+         justify-content: center
+      &__element
+         flex-basis: 48%
+         margin: 5px 1%
+
+@media (max-width: 480px)
+   .products
+      &__block
+      &__element
+         flex-basis: 100%
+         margin: 10px 0

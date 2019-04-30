@@ -1,0 +1,97 @@
+.featured
+   margin: 90px 0
+   &__title
+      font-size: 26px
+      line-height: 30px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 2.6px
+      color: $gray
+      text-align: center
+   &__block
+      display: flex
+      justify-content: space-between
+   &__element
+      flex-basis: 23%
+      img
+         display: block
+         max-width: 100%
+         margin: 0 auto 20px
+      p
+         font-size: 15px
+         line-height: 16px
+         font-weight: 700
+         color: $banner-text
+         margin: 7px 0
+      .featured
+         &__brand
+         font-weight: 400
+         color: #898989
+         &__price
+            span
+               text-decoration: line-through
+               margin-right: 10px
+               font-weight: 600
+      a
+         text-decoration: none
+         font-size: 15px
+         line-height: 16px
+         font-weight: 700
+         color: $banner-text
+         &:hover
+            text-decoration: underline
+   &__btn
+      $values: (fs: 12px, lh: 20px, ls: 0.6px, br: 60px, w:175px, bg: transparent, clr: $black)
+      @include btn($values...)
+      border: 2px solid #d9c8aa
+      margin: 50px auto
+      padding: 20px 0
+
+   .owl-nav
+      button
+         &.owl-prev
+            background: url('../../img/sprite-arrow2.png') 0 0 no-repeat
+            width: 49px
+            height: 49px
+            border: none
+            box-shadow: none
+            position: absolute
+            left: -91px
+            top: calc(50% - 49px)
+            cursor: pointer
+            transform: translateY(-50%)
+            &:hover
+               background-position: 0 -49px
+         &.owl-next
+            background: url('../../img/sprite-arrow2.png') -49px 0 no-repeat
+            width: 49px
+            height: 49px
+            border: none
+            box-shadow: none
+            position: absolute
+            right: -91px
+            top: calc(50% - 49px)
+            cursor: pointer
+            transform: translateY(-50%)
+            &:hover
+               background-position: -49px -49px
+@media (max-width: 1360px)
+   .featured
+      width: calc(100% - 186px)
+      margin: 90px auto
+
+@media (max-width: 768px)
+   .featured
+      margin: 40px auto
+
+@media (max-width: 680px)
+   .featured
+
+      width: calc(100% - 80px)
+      margin: 25px auto
+      .owl-nav
+         button
+            &.owl-prev
+               left: -50px
+            &.owl-next
+               right: -50px

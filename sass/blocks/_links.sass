@@ -1,0 +1,51 @@
+.links
+   background-color: rgba(248,248,248,0.92)
+   padding: 240px 0 100px
+   &__wrap
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+   &__element
+      flex-basis: 20%
+      margin-left: 20px
+      a
+         font-size: 14px
+         line-height: 22px
+         font-weight: 400
+         color: #727272
+         text-decoration: none
+         &:hover
+            text-decoration: underline
+      &-contact
+         font-size: 14px
+         line-height: 30px
+         font-weight: 400
+         color: #727272
+         & span
+            font-weight: 700
+            color: $black
+         & p:last-child
+            margin-top: 30px
+   &__title
+      font-size: 15px
+      line-height: 20px
+      font-weight: 700
+      text-transform: uppercase
+      color: #575153
+      margin: 40px 0
+@media (max-width: 1100px)
+   .links
+      padding-top: 180px
+      &__element
+         flex-basis: 33%
+      &__title
+         margin-bottom: 10px
+
+@media (max-width: 700px)
+   .links
+      padding: 150px 0 70px
+      &__element
+         flex-basis: 100%
+         text-align: center
+         & p:last-child
+            margin-top: 0
