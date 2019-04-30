@@ -345,7 +345,7 @@ p {
 }
 
 .slider .owl-nav button.owl-prev {
-  background: url("../../img/sprite-arrow.png") 0 0 no-repeat;
+  background: url("../img/sprite-arrow.png") 0 0 no-repeat;
   width: 49px;
   height: 49px;
   border: none;
@@ -364,7 +364,7 @@ p {
 }
 
 .slider .owl-nav button.owl-next {
-  background: url("../../img/sprite-arrow.png") -49px 0 no-repeat;
+  background: url("../img/sprite-arrow.png") -49px 0 no-repeat;
   width: 49px;
   height: 49px;
   border: none;
@@ -729,7 +729,7 @@ p {
 }
 
 .banner {
-  background: url("../../img/banner/banner1.jpg") left center no-repeat #00b7d9;
+  background: url("../img/banner/banner1.jpg") left center no-repeat #00b7d9;
   background-size: cover;
   margin: 25px 0;
   padding: 45px 0;
@@ -789,7 +789,7 @@ p {
 }
 
 .banner-left {
-  background: url("../../img/banner/banner2.jpg") center no-repeat #d7dbd5;
+  background: url("../img/banner/banner2.jpg") center no-repeat #d7dbd5;
   background-size: cover;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -1049,7 +1049,7 @@ p {
 }
 
 .featured .owl-nav button.owl-prev {
-  background: url("../../img/sprite-arrow2.png") 0 0 no-repeat;
+  background: url("../img/sprite-arrow2.png") 0 0 no-repeat;
   width: 49px;
   height: 49px;
   border: none;
@@ -1068,7 +1068,7 @@ p {
 }
 
 .featured .owl-nav button.owl-next {
-  background: url("../../img/sprite-arrow2.png") -49px 0 no-repeat;
+  background: url("../img/sprite-arrow2.png") -49px 0 no-repeat;
   width: 49px;
   height: 49px;
   border: none;
@@ -1214,7 +1214,6 @@ p {
 .links__element {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
-  margin-left: 20px;
 }
 
 .links__element a {
